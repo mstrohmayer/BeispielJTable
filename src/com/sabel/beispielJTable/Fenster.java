@@ -62,7 +62,7 @@ public class Fenster extends JFrame {
             int modelRow = jTable.convertRowIndexToModel(selectetRow);
             System.out.println("selectedRow: "+ selectetRow);
             System.out.println("modelRow: "+ modelRow);
-            model.loeschePerson((String) model.getValueAt(selectetRow,2));
+            model.loeschePerson((String) model.getValueAt(modelRow,2));
             model.fireTableDataChanged();
         }
     }
